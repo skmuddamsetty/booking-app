@@ -12,7 +12,7 @@ const hotelsReducerDefaultState = [
     title: 'ENTIRE GUESTHOUSE',
     subTitle: 'Carriage house 600 sq feet',
     plan: '2 guests.2 bedrooms.2 beds.1 bath',
-    features: 'Free parking on Premises.Wifi.Kitchen.Iron',
+    features: 'Free parking on Premises.Wifi',
     id: uuid()
   }
 ];

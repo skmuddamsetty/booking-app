@@ -4,6 +4,7 @@
   border-bottom: var(--color-primary-line);
   background-color: var(--color-primary-dark);
   color: var(--color-light-1);
+  cursor: pointer;
   &__item {
     position: relative;
     padding: 1rem;
