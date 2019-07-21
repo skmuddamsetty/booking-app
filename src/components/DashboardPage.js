@@ -1,4 +1,6 @@
 import React from 'react';
+import SearchResultsPage from './SearchResultsPage';
+
 const DashboardPage = () => (
   <div className="container">
     <div>
@@ -16,68 +18,7 @@ const DashboardPage = () => (
       />
     </div>
     <div className="content">
-      <nav className="sidebar">
-        <ul className="side-nav">
-          <li className="side-nav__item">
-            <div className="side-nav__item-title">Entire Guesthouse</div>
-            <div className="side-nav__item-subtitle">
-              Carriage house 600 sq feet
-            </div>
-            <div className="side-nav__item-plan">
-              2 guests<span className="side-nav__item-plan-item">.</span>2
-              bedrooms<span className="side-nav__item-plan-item">.</span>2 beds
-              <span className="side-nav__item-plan-item">.</span>1 bath
-            </div>
-            <div className="side-nav__item-features">
-              Free parking on Premises
-              <span className="side-nav__item-features-item">.</span>Wifi
-              <span className="side-nav__item-features-item">.</span>Kitchen
-              <span className="side-nav__item-features-item">.</span>Iron
-            </div>
-          </li>
-        </ul>
-        <ul className="side-nav">
-          <li className="side-nav__item">
-            <div className="side-nav__item-title">Entire Guesthouse</div>
-            <div className="side-nav__item-subtitle">
-              Carriage house 600 sq feet
-            </div>
-            <div className="side-nav__item-plan">
-              2 guests<span className="side-nav__item-plan-item">.</span>2
-              bedrooms<span className="side-nav__item-plan-item">.</span>2 beds
-              <span className="side-nav__item-plan-item">.</span>1 bath
-            </div>
-            <div className="side-nav__item-features">
-              Free parking on Premises
-              <span className="side-nav__item-features-item">.</span>Wifi
-              <span className="side-nav__item-features-item">.</span>Kitchen
-              <span className="side-nav__item-features-item">.</span>Iron
-            </div>
-          </li>
-        </ul>
-        <ul className="side-nav">
-          <li className="side-nav__item">
-            <div className="side-nav__item-title">Entire Guesthouse</div>
-            <div className="side-nav__item-subtitle">
-              Carriage house 600 sq feet
-            </div>
-            <div className="side-nav__item-plan">
-              2 guests<span className="side-nav__item-plan-item">.</span>2
-              bedrooms<span className="side-nav__item-plan-item">.</span>2 beds
-              <span className="side-nav__item-plan-item">.</span>1 bath
-            </div>
-            <div className="side-nav__item-features">
-              Free parking on Premises
-              <span className="side-nav__item-features-item">.</span>Wifi
-              <span className="side-nav__item-features-item">.</span>Kitchen
-              <span className="side-nav__item-features-item">.</span>Iron
-            </div>
-          </li>
-        </ul>
-        <div className="legal">
-          &copy; 2019 by Booking.com. All rights reserved.
-        </div>
-      </nav>
+      <SearchResultsPage />
       <main className="motel-view">Motel View</main>
     </div>
   </div>
