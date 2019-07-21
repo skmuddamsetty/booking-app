@@ -1,0 +1,48 @@
+.search-bar {
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    background-color: var(--color-primary-dark);
+    color: var(--color-light-1);
+    font-weight: 600;
+  }
+  &__input-group {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  border-bottom: var(--line);
+}
+.search__input {
+  &-label {
+    margin-bottom: 0.25rem;
+    font-size: 1.75rem;
+  }
+  letter-spacing: 0.1rem;
+  font-family: inherit; // inherits from parent element
+  font-size: 1.25rem;
+  color: inherit;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  background-color: var(--color-grey-light-2);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 10rem;
+  width: 25%;
+  transition: all 0.2s;
+  &:focus {
+    outline: none;
+    width: 30%;
+    background-color: var(--color-grey-light-3);
+  }
+  // this works in chrome and safari browsers only
+  &::webkit-input-placeholder {
+    font-weight: 100;
+    color: var(--color-grey-light-4);
+  }
+}

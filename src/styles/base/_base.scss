@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+:root {
+  --color-primary: #c69963;
+  --color-primary-light: #b28451;
+  --color-primary-dark: #101d2c;
+  --color-light-1: #f9f7f6;
+  --color-dark-1: #54483a;
+  --color-dark-2: #6d5d4b;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+  --color-primary-line: 0.1px solid var(--color-primary);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; // line height of overall document
+  // background-image: linear-gradient(to right bottom, #f7f7f7, #faf9f9);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-primary) 7.9%,
+    var(--color-primary-light) 94.1%
+  );
+  color: $main-layout-color-primary;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}

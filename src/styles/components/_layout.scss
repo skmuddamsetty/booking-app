@@ -1,0 +1,25 @@
+.container {
+  max-width: 120rem;
+  margin: 2rem auto;
+  background-color: #faf9f9;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  display: flex;
+  border-top: var(--line);
+  margin-top: 1rem;
+}
+
+.sidebar {
+  background-color: #fff;
+  flex: 0 0 40%; // tells how much space it should occupy. donotgrow donotshrink %ofspace
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1; // it says element can grow as much as it can
+}

@@ -1,0 +1,73 @@
+.side-nav {
+  width: 100%;
+  list-style: none;
+  border-bottom: var(--color-primary-line);
+  background-color: var(--color-primary-dark);
+  color: var(--color-light-1);
+  &__item {
+    position: relative;
+    padding: 1rem;
+    &-title {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      z-index: 10;
+      position: relative;
+    }
+    &-subtitle {
+      font-size: 1.7rem;
+      font-weight: 600;
+      z-index: 10;
+      position: relative;
+    }
+
+    &-plan {
+      font-size: 1.5rem;
+      font-weight: 400;
+      z-index: 10;
+      position: relative;
+      &-item {
+        &:not(:last-of-type) {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+    &-features {
+      font-size: 1.5rem;
+      font-weight: 400;
+      z-index: 10;
+      position: relative;
+      &-item {
+        &:not(:last-of-type) {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+  }
+  &__item::before {
+    content: ''; // if content is not set, nothing is going to be displayed on the browser
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; // this specifies that this element height should be the same as &__item
+    width: 3px;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.3s,
+      background-color 0.1s; // first transform happens in .2s and we wait for .3s and the width transform happens in .4s
+    // transform-origin: bottom; // by default this is center, if we set to bottom, this item is going to start from the bottom
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+}
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-dark-2);
+}
