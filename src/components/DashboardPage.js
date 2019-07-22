@@ -20,7 +20,7 @@ const DashboardPage = () => (
     </div>
     <div className="content">
       <SearchResultsPage />
-      <main className="motel-view">
+      <main className="hotel-view">
         <HotelViewPage />
       </main>
     </div>
