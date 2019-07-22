@@ -5,6 +5,9 @@
   background-color: var(--color-primary-dark);
   color: var(--color-light-1);
   cursor: pointer;
+  button {
+    position: relative;
+  }
   &__item {
     position: relative;
     padding: 1rem;

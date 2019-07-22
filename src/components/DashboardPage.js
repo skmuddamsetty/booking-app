@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchResultsPage from './SearchResultsPage';
+import HotelViewPage from './HotelViewPage';
 
 const DashboardPage = () => (
   <div className="container">
@@ -19,7 +20,9 @@ const DashboardPage = () => (
     </div>
     <div className="content">
       <SearchResultsPage />
-      <main className="motel-view">Motel View</main>
+      <main className="motel-view">
+        <HotelViewPage />
+      </main>
     </div>
   </div>
 );

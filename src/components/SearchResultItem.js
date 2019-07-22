@@ -1,7 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { setUuid } from '../actions/filters';
+
 const SearchResultItem = ({
   dispatch,
-  id,
+  uuid,
   title,
   subTitle,
   features,
@@ -12,6 +15,8 @@ const SearchResultItem = ({
     <div className="side-nav__item-subtitle">{subTitle}</div>
     <div className="side-nav__item-plan">{plan}</div>
     <div className="side-nav__item-features">{features}</div>
+    <button onClick={() => dispatch(setUuid(uuid))}>View Detail</button>
   </li>
 );
-export default SearchResultItem;
+
+export default connect()(SearchResultItem);

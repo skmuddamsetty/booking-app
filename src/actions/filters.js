@@ -17,3 +17,8 @@ export const setEndDate = (endDate = undefined) => ({
   type: 'SET_END_DATE',
   endDate
 });
+// SET_UUID
+export const setUuid = (uuid = undefined) => ({
+  type: 'SET_UUID',
+  uuid
+});
