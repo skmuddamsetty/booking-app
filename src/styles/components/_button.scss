@@ -33,6 +33,9 @@
   &:hover {
     background-color: #b28451;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .round-btn {
