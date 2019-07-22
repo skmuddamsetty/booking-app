@@ -15,7 +15,9 @@ const SearchResultItem = ({
     <div className="side-nav__item-subtitle">{subTitle}</div>
     <div className="side-nav__item-plan">{plan}</div>
     <div className="side-nav__item-features">{features}</div>
-    <button onClick={() => dispatch(setUuid(uuid))}>View Detail</button>
+    <button onClick={() => dispatch(setUuid(uuid))} className="btn">
+      View Detail
+    </button>
   </li>
 );
 

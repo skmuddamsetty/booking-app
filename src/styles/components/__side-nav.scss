@@ -5,6 +5,8 @@
   background-color: var(--color-primary-dark);
   color: var(--color-light-1);
   cursor: pointer;
+  max-height: 55rem;
+  overflow-y: scroll;
   button {
     position: relative;
   }

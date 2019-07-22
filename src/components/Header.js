@@ -8,17 +8,8 @@ const Header = () => (
       <div className="header__search-box-text">
         <input type="text" placeholder="Anywhere" autoComplete="off" />
       </div>
+      {/* <button className="round-btn">Search</button> */}
     </div>
-    {/* <img src="/images/sun_icon.png" alt="Logo" className="header__logo" />
-
-    <nav className="navbar">
-      <Link className="navbar__link" to="/">
-        Home
-      </Link>
-      <NavLink to="/car-comparator" className="navbar__link" exact={true}>
-        Car Comparator
-      </NavLink>
-    </nav> */}
   </header>
 );
 export default Header;

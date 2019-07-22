@@ -17,3 +17,39 @@
 .button--secondary {
   background: #888;
 }
+
+.btn {
+  background-color: #c69963;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    background-color: #b28451;
+  }
+}
+
+.round-btn {
+  background-color: #c69963;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 1rem;
+  // width: 100%;
+  cursor: pointer;
+  border-radius: 5rem;
+  transition: all 0.2s;
+  align-self: initial;
+  &:hover {
+    background-color: #b28451;
+  }
+}
